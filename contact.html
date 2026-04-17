@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Solomon Geta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            background: #111;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 0.5rem;
+            color: white;
+            font-family: inherit;
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body style="padding-top: var(--nav-height);">
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SOLOMON<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container reveal">
+            <h1 class="section-title">Let's build something <span>extraordinary.</span></h1>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin: 0 auto;">Ready to start your next project or have a question? I'd love to hear from you. Reach out through the form or via my contact details below.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div style="display: flex; gap: 4rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="reveal">
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Contact Details</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">Email</h4>
+                        <p style="font-size: 1.2rem;">solomongeta14@gmail.com</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">Location</h4>
+                        <p style="font-size: 1.2rem;">Dire Dawa, Ethiopia</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">Phone</h4>
+                        <p style="font-size: 1.2rem;">0935528932</p>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem; font-size: 1.5rem; color: var(--text-muted);">
+                        <a href="https://linkedin.com/in/solomongeta14-wq"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/solomongeta14-wq"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div style="flex: 2; min-width: 300px; background: var(--bg-card); padding: 3rem; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.05);" class="reveal">
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Project Inquiry" required>
+                        </div>
+                        <div>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-input" rows="6" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">SOLOMON<span>.</span></div>
+                    <p style="color: var(--text-muted); max-width: 300px;">Full Stack Developer focused on building practical and impactful applications.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/solomongeta14-wq"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/solomongeta14-wq"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:solomongeta14@gmail.com">solomongeta14@gmail.com</a></li>
+                        <li><a href="tel:0935528932">0935528932</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; color: var(--text-muted); padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05);">
+                <p>&copy; 2026 Solomon Geta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
